@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #6f6f6f;
+  background: black;
+}
+nav h1 {
+  color: white;
+  font-family: "playfair display", sans-serif;
+  font-size: 30px;
+}
+/*apres onglets a*/
+nav .onglets {
+  margin-top: 3px;
+  margin-left: 300px;
+}
+nav .onglets a {
+  text-decoration: none;
+  color: white;
+  margin-right: 18px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+nav .onglets a:hover {
+  color: red;
+  margin-right: 18px;
+  border: 15px solid white;
+  border-radius: 15px;
+  background-color: white;
+  font-weight: bold;
+}
+header {
+  display: flex; /*aligner les element*/
+  flex-direction: column;
+  /*en pilé en colum*/
+  align-items: center;
+  background: url("images/PP.jpg");
+  background-size: cover;
+  color: #fff;
+  padding: 40px;
+}
+header h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
+    sans-serif;
+  font-size: 35px;
+}
+header h4 {
+  margin-top: -20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+header button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*la section*/
+.main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*apres avoir finir avec card img*/
+.main .content .card {
+  display: flex; /*pour aligner les elements*/
+  flex-wrap: wrap; /*eviter les s'enpile*/
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.main .content .card .left {
+  flex: 0 0 30%;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+}
+.main .content .card.right {
+  flex: 0 0 70%;
+}
+.main .content .card .right img {
+  height: 300px;
+  width: 400px;
+  margin-top: 5px;
+}
+/*footer*/
+footer {
+  margin-top: 40px;
+  border-top: 5px solid #970d0d;
+  background-color: #000;
+  color: white;
+  padding: 30px 100px; /*en haut bas et droite gauche*/
+}
+footer h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #fff;
+  width: 20%; /*retraircir le trait en haut*/
+  padding-bottom: 5px;
+}
+footer .services {
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .services .service {
+  margin-right: 30px; /*pas bien aligne donc en bas*/
+  padding: 10px;
+}
+footer .services .service p {
+  max-width: 300px;
+}
+footer #contact {
+  color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width: 680px) {
+  nav .onglets {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
