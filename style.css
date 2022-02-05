@@ -41,7 +41,7 @@ header {
   flex-direction: column;
   /*en pilé en colum*/
   align-items: center;
-  background: url("images/pp.jpg");
+  background: url("images/pp.jpeg");
   background-size: cover;
   color: #fff;
   padding: 40px;
